@@ -8,7 +8,7 @@ server.listen(process.env.port || process.env.PORT || 3978, function () {
     console.log(`\nGet Bot Framework Emulator: https://aka.ms/botframework-emulator`);
 }); 
 
-server.get('/', (req, res) => {
+server.get('/test', (req, res) => {
     console.log("Lets rock n roll!")
     res.send('<html><body><h1>Hulk Smash!!!</h1></body></html>');
 })
